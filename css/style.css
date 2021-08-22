@@ -57,11 +57,15 @@ ul {
   align-items: center;
 }
 .header-logo {
+  font-family: Raleway;
   font-weight: 500;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 .logo {
   font-weight: 500;
@@ -73,9 +77,9 @@ ul {
 }
 .header-navigation {
   display: flex;
-  margin-left: auto;
 }
 .header-list {
+  margin-left: 93px;
   display: flex;
   align-items: center;
 }
@@ -92,6 +96,13 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+.active {
+  color: var(--active-text-color);
 }
 .header-mail {
   font-weight: 500;
@@ -100,6 +111,9 @@ ul {
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
   margin-right: 50px;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 .header-tel {
   font-weight: 500;
@@ -107,15 +121,23 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 /*--------------------hero-------------------------------*/
+.hero {
+  background-color: #2f303a;
+  height: 600px;
+  text-align: center;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--only-text-color);
-  background-color: #2f303a;
+  padding-top: 200px;
 }
 .hero-button {
   font-family: Roboto;
@@ -126,6 +148,23 @@ ul {
   color: var(--only-text-color);
   background-color: var(--active-text-color);
   cursor: pointer;
+  margin-top: 30px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.hero-tho-list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-tho-list .hero-tho-item {
+  width: 270px;
+  margin-right: 30px;
+}
+.hero-tho-item:nth-child(4n) {
+  margin-right: 0;
 }
 .hero-tho-title {
   font-weight: 700;
