@@ -59,6 +59,7 @@ img {
 .header {
   display: flex;
   align-items: center;
+  border: 1px solid #ececec;
 }
 .header-logo {
   font-family: Raleway;
@@ -83,16 +84,16 @@ img {
   display: flex;
 }
 .header-list {
-  margin-left: 93px;
   display: flex;
   align-items: center;
+  margin-left: 93px;
 }
 .item:not(:last-child) {
   margin-right: 50px;
 }
 .header-adress {
   display: flex;
-  margin-right: auto;
+  margin-left: auto;
 }
 .adress-item:not(:last-child) {
   margin-right: 50px;
@@ -105,8 +106,8 @@ img {
   color: var(--main-text-color);
 
   display: block;
-  padding-top: 33px;
-  padding-bottom: 31px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .active {
