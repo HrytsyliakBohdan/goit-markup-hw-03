@@ -292,6 +292,7 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   display: block;
+  font-style: normal;
   text-decoration: none;
   color: var(--only-text-color);
 }
@@ -301,6 +302,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   display: block;
+  font-style: normal;
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -309,6 +311,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-style: normal;
   display: block;
   color: rgba(255, 255, 255, 0.6);
 }
