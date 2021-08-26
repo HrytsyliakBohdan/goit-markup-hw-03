@@ -20,12 +20,13 @@ h6 {
   margin-bottom: 0;
 }
 ul {
+  list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 .container {
@@ -33,9 +34,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-.list {
-  list-style-type: none;
 }
 img {
   display: block;
@@ -56,10 +54,12 @@ img {
 }
 
 /*----------------Header------------------------*/
+header {
+  border-bottom: 1px solid #ececec;
+}
 .header {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
 }
 .header-logo {
   font-family: Raleway;
@@ -83,22 +83,22 @@ img {
 .header-navigation {
   display: flex;
 }
-.header-list {
+.navigation-list {
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
-.item:not(:last-child) {
+.navigation-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-adress {
+.contacts {
   display: flex;
   margin-left: auto;
 }
-.adress-item:not(:last-child) {
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-link {
+.navigation-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -113,7 +113,7 @@ img {
 .active {
   color: var(--active-text-color);
 }
-.header-mail {
+.contacts-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -123,7 +123,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-tel {
+.contacts-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -136,7 +136,7 @@ img {
 /*--------------------hero-------------------------------*/
 .hero {
   background-color: #2f303a;
-  height: 600px;
+  padding: 200px 0;
   text-align: center;
 }
 .hero-title {
@@ -145,7 +145,6 @@ img {
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--only-text-color);
-  padding-top: 200px;
   text-transform: uppercase;
 }
 .hero-button {
@@ -165,18 +164,16 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.hero-tho-list {
+.advantages {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
 }
-.hero-tho-list .hero-tho-item {
+.advantages .advantages-item {
   margin-right: 30px;
 }
-.hero-tho-item:nth-child(4n) {
+.advantages-item:nth-child(4n) {
   margin-right: 0;
 }
-.hero-tho-title {
+.advantages-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -187,7 +184,7 @@ img {
   width: 270px;
   height: 16px;
 }
-.hero-tho-pr {
+.advantages-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -196,8 +193,8 @@ img {
   height: 75px;
   color: var(--additional-text-color);
 }
-.work {
-  display: flex;
+.work-section {
+  padding-top: 0;
 }
 .work-title {
   font-weight: 700;
@@ -208,22 +205,19 @@ img {
   margin-bottom: 50px;
   color: var(--main-text-color);
 }
-.work-images {
+.works {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
 }
-.work-images .work-item {
+.works .work-item {
   margin-right: 30px;
 }
 .work-item:nth-child(3n) {
   margin-right: 0;
 }
-.hero-team {
-  display: flex;
+.team-section {
   background-color: #f5f4fa;
 }
-.hero-team-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -232,26 +226,32 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
-.hero-team-list {
+.team-list {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
 }
-.hero-team-list .team-item {
+.team-list .team-item {
   margin-right: 30px;
 }
 .team-item:nth-child(4n) {
   margin-right: 0;
 }
-.hero-team-name {
+.team-style {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-title-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   color: var(--main-text-color);
 }
-.hero-team-spec {
+.team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -281,16 +281,19 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
   color: var(--active-text-color);
 }
-
+.footer-list {
+  margin-bottom: 20px;
+}
+.footer-item {
+  margin-bottom: 9px;
+}
 .footer-maps {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
   display: block;
   font-style: normal;
   text-decoration: none;
@@ -303,7 +306,6 @@ img {
   letter-spacing: 0.03em;
   display: block;
   font-style: normal;
-  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
@@ -344,10 +346,14 @@ img {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
   margin-right: calc(-1 * 30px);
   margin-bottom: calc(-1 * 30px);
+}
+.portfolio-style {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
